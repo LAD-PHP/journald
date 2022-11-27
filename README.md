@@ -63,7 +63,10 @@ Journald Configuration File
 [Journal]
 Storage=persistent
 ```
-
+После чего необходимо перезагрузить службу systemd-journald.service
+```
+systemctl restart systemd-journald.service
+```
 Это создаст каталог /var/log/journal, и все файлы журнала будут сохранены в эту директорию.
 
 
